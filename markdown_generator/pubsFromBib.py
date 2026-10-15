@@ -98,9 +98,12 @@ for pubsource in publist:
             #Build Citation from text
             citation = ""
 
-            #citation authors - todo - add highlighting for primary author?
+            # Citation authors. Highlight the site owner's name in generated citations.
             for author in bibdata.entries[bib_id].persons["author"]:
-                citation = citation+" "+author.first_names[0]+" "+author.last_names[0]+", "
+                author_name = author.first_names[0]+" "+author.last_names[0]
+                if author.last_names[0] == "Ioannou":
+                    author_name = "<strong>"+author_name+"</strong>"
+                citation = citation+" "+author_name+", "
 
             #citation title
             citation = citation + "\"" + html_escape(b["title"].replace("{", "").replace("}","").replace("\\","")) + ".\""

@@ -243,3 +243,51 @@
     }
   }
 }
+
+/*
+   Publications list (styled after fxbriol.github.io/publications)
+   ========================================================================== */
+
+.pub-list {
+  margin-top: 1.5em;
+  padding-left: 1.2em;
+
+  .pub {
+    margin-bottom: 1em;
+    line-height: 1.6;
+  }
+}
+
+// equal-contribution asterisk: full size, nudged down so it sits like a letter
+.pub-list sup,
+.pub-footnote sup {
+  font-size: 1em;
+  vertical-align: baseline;
+  position: relative;
+  top: 0.2em;
+}
+
+.pub-me {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.pub-title {
+  font-style: italic;
+}
+
+.pub-link {
+  font-weight: bold;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.pub-notes {
+  margin: 0.3em 0 0;
+  font-size: 0.9em;
+}
+
+.pub-footnote {
+  font-size: 0.85em;
+  font-style: italic;
+}

@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Stefanos Ioannou"
 title_separator          : "-"
 name                     : &name "Stefanos Ioannou"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Stefanos Ioannou, PhD student in Statistical Science at UCL"
 url                      : https://stefanosioannou.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,14 +23,14 @@ repository               : "stefanosioannou/stefanosioannou.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Stefanos Ioannou"
   pronouns         : # example: "she/her"  
-  bio              : "I like to build things"
+  bio              : "PhD student in Statistical Machine Learning at UCL"
   location         : London, UK
-  employer         : "University College London"
+  employer         : "UCL"
   uri              : # URL
-  email            :  
+  email            : stefanos.ioannou.26@ucl.ac.uk
 
   # Academic websites
   academia         : # URL
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "ioannou-stefan"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

@@ -154,8 +154,13 @@
   }
 
   img {
-    max-width: 175px;
+    max-width: 150px;
     border-radius: 50%;
+    // crop non-square photos to a circle instead of an oval
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: 80% 50%; // keeps the face centred in profile.jpg
 
     @include breakpoint($large) {
       padding: 5px;

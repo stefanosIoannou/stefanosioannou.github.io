@@ -1,4 +1,5 @@
 ---
+published: false # hidden until the CV is filled in
 layout: archive
 title: "CV"
 permalink: /cv/

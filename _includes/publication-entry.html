@@ -1,0 +1,19 @@
+{% comment %}
+  One entry in the publications list, styled after fxbriol.github.io/publications:
+  Authors (Year). Title. Venue. (Link) (Link)
+  Uses `authors`, `pubvenue` (falls back to `venue`) and `links` from the front matter.
+{% endcomment %}
+{% assign pub_venue = post.pubvenue | default: post.venue %}
+<li class="pub">
+  {{ post.authors }} ({{ post.date | date: "%Y" }}).
+  <span class="pub-title">{{ post.title }}</span>.
+  {% if pub_venue %}{{ pub_venue }}.{% endif %}
+  {% for link in post.links %}
+    <a class="pub-link" href="{{ link.url }}">({{ link.label }})</a>
+  {% endfor %}
+  {% if post.notes %}
+    <ul class="pub-notes">
+      {% for note in post.notes %}<li>{{ note }}</li>{% endfor %}
+    </ul>
+  {% endif %}
+</li>
